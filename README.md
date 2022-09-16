@@ -17,12 +17,11 @@
 import json
 from dataclasses import asdict, dataclass
 
-
 @dataclass
 class Stack:
     languages   : tuple[str, ...] = ("Python", "Bash", "HTML", "CSS")
-    misc        : tuple[str, ...] = ("Docker", "Linux", "FastAPI")
-    ongoing     : tuple[str, ...] = ("Django", "Java", "JavaScript")
+    misc        : tuple[str, ...] = ("GoLang", "FastAPI")
+    ongoing     : tuple[str, ...] = ("Flask", "Rust", "JavaScript")
 
     def serialize(self):
         return json.dumps(asdict(self), indent=4)
@@ -30,7 +29,7 @@ class Stack:
 
 stack = Stack()
 print(stack.serialize())
-print("Hola! Welcome To Safone's World !! 😎")
+print("Hola! Welcome To xBlackxCoder's World !! 😎")
 ​
 
 ```
